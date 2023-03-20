@@ -1,0 +1,38 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4" *ngFor="let course of courses">
+      <div class="card card-margin">
+          <div class="card-header no-border">
+              <h5 class="card-title" >{{ course.name }}</h5>
+          </div>
+          <div class="card-body pt-0">
+              <div class="widget-49">
+                  <div class="widget-49-title-wrapper">
+                      <!-- <div class="widget-49-date-primary">
+                          <span class="widget-49-date-day">09</span>
+                          <span class="widget-49-date-month">apr</span>
+                      </div> -->
+                      <div class="widget-49-meeting-info">
+                          <span class="widget-49-pro-title">A JavaScript library for building user interfaces
+
+                          </span>
+                          <span class="widget-49-meeting-time">Estimated time to complete 70 Hours</span>
+                      </div>
+                  </div>
+                  <ol class="widget-49-meeting-points">
+                      <li class="widget-49-meeting-item"><span>Declarative</span></li>
+                      <li class="widget-49-meeting-item"><span>Component-Based</span></li>
+                      <li class="widget-49-meeting-item"><span>Learn Once, Write Anywhere ...still more features</span></li>
+                  </ol>
+                  <div class="widget-49-meeting-action">
+                      <a  class="btn btn-sm btn-flash-border-primary" r (click)="coursedetails(course.id)">Lets Start</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  </div>
+  </div>
+<router-outlet></router-outlet>

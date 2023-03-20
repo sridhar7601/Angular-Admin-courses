@@ -1,0 +1,24 @@
+
+
+
+
+ <ngb-accordion [closeOthers]="true" activeIds="static-1" >
+	<ngb-panel id="static-1" title="Week - 1">
+		<ng-template ngbPanelContent>
+      <div class="list-group"  *ngFor="let course of user">
+        <!-- <button type="button" class="list-group-item list-group-item-action active">
+          Cras justo odio
+        </button>  -->
+        <button
+
+        type="button" class="list-group-item list-group-item-action" (click)="courseid(course.id)">
+          <span>{{course.title}}</span>
+        </button>
+        </div>
+		</ng-template>
+	</ngb-panel>
+
+</ngb-accordion>
+<!-- Sidebar -->
+<!-- <router-outlet></router-outlet> -->
+Sidebar
