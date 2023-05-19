@@ -23,7 +23,7 @@ export class BodyofcourseComponent {
     refreshList(id:number){
       // let no:number=0;
       // this.id = this.route.snapshot.params['id'];
-      this.http.get<any>(environment.API_URL +`weeks`).subscribe((data) => {
+      this.http.get<any>(environment.API_URL +`courses/${this.id}/weeks`).subscribe((data) => {
         this.user = data; // assign the received data to courses array
         console.log(data);
       });

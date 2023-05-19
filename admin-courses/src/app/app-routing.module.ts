@@ -8,7 +8,8 @@ const routes: Routes = [
   {path:"",component:CardsComponent},{path:"bodyofcoursecontent",component:BodyofcoursecontentComponent},
  {path:"body",component:BodyComponent,
 children:[
-  {path:"bodyofcoursecontent",component:BodyofcoursecontentComponent}, {path:"bodyofcourses/:id",component:BodyComponent
+  {path:"bodyofcoursecontent",component:BodyofcoursecontentComponent},
+  {path:"bodyofcourses/:id",component:BodyComponent
 }
 ]}
 //   {path:"bodyofcoursecontent/:id",component:BodyofcoursecontentComponent

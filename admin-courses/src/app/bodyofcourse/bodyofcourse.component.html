@@ -2,10 +2,10 @@
 
 
 
- <ngb-accordion [closeOthers]="true" activeIds="static-1" >
-	<ngb-panel id="static-1" title="Week - 1">
+ <ngb-accordion [closeOthers]="true" activeIds="static-1" *ngFor="let course of user" >
+	<ngb-panel id="static-1" title="Week - {{course.id}}">
 		<ng-template ngbPanelContent>
-      <div class="list-group"  *ngFor="let course of user">
+      <div class="list-group" >
         <!-- <button type="button" class="list-group-item list-group-item-action active">
           Cras justo odio
         </button>  -->

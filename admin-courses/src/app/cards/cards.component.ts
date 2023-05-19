@@ -21,7 +21,7 @@ ngOnInit(): void {
     // let no:number=0;
     this.http.get<any>(environment.API_URL+'courses').subscribe((data)=>{
       this.courses = data; // assign the received data to courses array
-      console.log(data);
+      console.log(data,"gg");
     });
 
 }

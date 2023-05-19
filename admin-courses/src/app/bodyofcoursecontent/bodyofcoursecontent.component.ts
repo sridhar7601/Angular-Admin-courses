@@ -29,6 +29,6 @@ export class BodyofcoursecontentComponent {
         console.log(data.length,"boc");
         this.router.navigate(['body/bodyofcoursecontent']);
     });
-}
+  }
 
 }
